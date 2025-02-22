@@ -3,7 +3,12 @@ import Intro from "@/components/about/Intro";
 import Companies from "@/components/company/Companies";
 import CompaniesMarquee from "@/components/company/CompaniesMarquee";
 import Projects from "@/components/project/Projects";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Ahmad Aldali | Homepgae",
+};
 
 export default function Home() {
   return (

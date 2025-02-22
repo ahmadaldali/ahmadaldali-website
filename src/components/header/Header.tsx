@@ -8,7 +8,7 @@ export default function Header() {
           <div className="flex items-center gap-x-6 md:order-2">
             <HeaderButton buttonText="Home" buttonLink="/" />
             <HeaderButton buttonText="Projects" buttonLink="/projects" />
-            <HeaderButton buttonText="CV" buttonLink="/CV.pdf" />
+            <HeaderButton buttonText="CV" buttonLink="/CV.pdf" target="_blank" />
           </div>
         </nav>
       </div>

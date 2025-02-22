@@ -1,5 +1,10 @@
 import Table from "@/components/ui/Table";
 import { projects } from "@/libs/project";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Ahmad | Projects',
+};
 
 export default function ProjectsPage() {
   const columns = [
