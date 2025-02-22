@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ahmad Aldali | Personal website",
-  description: "Create by nextJS",
+  description: "Software Engineer - This website was created using NextJs",
 };
 
 export default function RootLayout({

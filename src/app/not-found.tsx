@@ -1,5 +1,6 @@
 "use client";
 
+import { pagesRoutes } from "@/route";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -43,7 +44,7 @@ export default function NotFound() {
         </div>
       </div>
 
-      <Link href="/" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+      <Link href={pagesRoutes.homepage} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
         <strong className="underline">Go to happiness</strong>
       </Link>
     </div>

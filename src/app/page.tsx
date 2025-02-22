@@ -3,11 +3,12 @@ import Intro from "@/components/about/Intro";
 import Companies from "@/components/company/Companies";
 import CompaniesMarquee from "@/components/company/CompaniesMarquee";
 import Projects from "@/components/project/Projects";
+import { pagesRoutes } from "@/route";
 import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Ahmad Aldali | Homepgae",
+  title: "Ahmad Aldali | Homepage",
 };
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
 
             <a
               className="group hover:cursor-pointer hover:underline decoration-teal10 flex gap-2 mt-2"
-              href="/projects"
+              href={pagesRoutes.projects}
               target="_blank"
             >
               <strong className="text-teal10">Curious to discover all? </strong>

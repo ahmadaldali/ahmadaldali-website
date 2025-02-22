@@ -3,7 +3,7 @@ import { projects } from "@/libs/project";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Ahmad | Projects',
+  title: 'Ahmad Aldali | Projects',
 };
 
 export default function ProjectsPage() {
