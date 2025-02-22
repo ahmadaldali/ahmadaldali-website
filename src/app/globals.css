@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container for the marquee */
+.marquee {
+  width: 100%;
+  overflow: hidden; /* Hides the content outside the container */
+  white-space: nowrap; /* Prevents the content from wrapping to the next line */
+  position: relative;
+}
+
+/* Content inside the marquee */
+.marqueeContent {
+  display: inline-block;
+  white-space: nowrap; /* Prevents wrapping */
+  animation: marquee 10s linear infinite; /* Adds the scrolling animation */
+}
+
+/* Keyframes for the scrolling effect */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Start off-screen on the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move off-screen to the left */
+  }
+}
