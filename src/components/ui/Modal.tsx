@@ -49,7 +49,7 @@ const Modal: React.FC<ModalProps> = ({
     }
   };
 
-  const clickOutside = (e: MouseEvent, persistent: boolean) => {
+  const clickOutside = (e: React.MouseEvent, persistent: boolean) => {
     if (persistent === false) {
       if (modalRef.current) {
         const modalDimensions = modalRef.current.getBoundingClientRect();
@@ -73,8 +73,6 @@ const Modal: React.FC<ModalProps> = ({
   };
 
   useEffect(() => {
-    window.addEventListener("keydown", handleKeydown);
-
     return () => {
       window.removeEventListener("keydown", handleKeydown);
     };
@@ -95,8 +93,6 @@ const Modal: React.FC<ModalProps> = ({
   return (
     <>
       {open && (
-        // svelte-ignore a11y-click-events-have-key-events
-        // svelte-ignore a11y-no-static-element-interactions
         <div
           onClick={(e) => clickOutside(e, persistent)}
           className="bg-parch16/50 fixed inset-0 z-[100] flex items-center justify-center overflow-hidden px-4"
