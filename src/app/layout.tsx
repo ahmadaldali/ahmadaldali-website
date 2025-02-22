@@ -26,6 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full md:overflow-y-hidden">
+      <head><link rel="icon" href="/favicon.ico" sizes="any" /></head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-white antialiased text-parch16 h-full flex flex-col min-h-screen`}
       >

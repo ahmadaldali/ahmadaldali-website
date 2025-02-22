@@ -26,7 +26,7 @@ export default function AccountLinks() {
       >
         <Image
           aria-hidden
-          src="/svg/linkedIn.svg"
+          src="/svg/linkedin.svg"
           alt="LinkedIn icon"
           width={16}
           height={16}
