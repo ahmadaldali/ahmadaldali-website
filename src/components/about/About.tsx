@@ -11,14 +11,13 @@ export default function About() {
         <section className="mb-6">
             <h2 className="text-2xl font-semibold mb-2">Skills</h2>
             <ul className="list-disc list-inside space-y-1">
-                <li><strong>Languages & Frameworks:</strong> PHP, Laravel, JavaScript, TypeScript, Svelte, jQuery, Vue.js, Java, Flutter</li>
-                <li><strong>Web Development:</strong> HTML, CSS, Tailwind CSS, Bootstrap, AJAX</li>
-                <li><strong>Databases:</strong> MySQL, MongoDB, GraphQL</li>
-                <li><strong>Tools & Technologies:</strong> AWS, Unity</li>
-                <li><strong>Development Practices:</strong> OOP, Design Patterns, Agile Methodologies</li>
-                <li><strong>Version Control:</strong> Git</li>
-                <li><strong>Operating Systems:</strong> Linux</li>
-                <li><strong>Soft Skills:</strong> Team Management, Leadership, Fast Learner, Ability to Work Under Pressure</li>
+                <li><strong>Languages & Frameworks:</strong> PHP, Laravel, JavaScript, TypeScript, Vue.js, Svelte, NextJS, AJAX, jQuery, Java, Flutter, Dart, Python, Django.</li>
+                <li><strong>Web Development:</strong> HTML, CSS, Tailwind CSS, Bootstrap, REST Apis, GraphQL, Postman.</li>
+                <li><strong>Databases:</strong> MySQL, MongoDB.</li>
+                <li><strong>Tools:</strong> AWS, Unity, Apache, Nginx</li>
+                <li><strong>Development Practices:</strong> OOP, Design Patterns, Agile Methodologies.</li>
+                <li><strong>Version Control:</strong> Git, Github, Bitbucket.</li>
+                <li><strong>Soft Skills:</strong> Team Management, Leadership, Fast Learner, Ability to Work Under Pressure.</li>
             </ul>
         </section>
 
@@ -26,7 +25,8 @@ export default function About() {
             <h2 className="text-2xl font-semibold mb-2">Goals</h2>
             <ul className="list-disc list-inside space-y-1">
                 <li><strong>2024 Achievements:</strong> Learned Svelte and Tailwind CSS.</li>
-                <li><strong>2025 Goal:</strong> Currently learning Django and building my website using Next.js.</li>
+                <li><strong>2025 Goal:</strong> Currently learning Django.</li>
+                <li><strong>2025 Achievements:</strong> You are <span><strong>HERE.</strong></span></li>
             </ul>
         </section>
         </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import { projects } from "@/libs/project";
 import { TProject } from "@/types";
 import Project from "./Project";
