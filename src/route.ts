@@ -1,4 +1,5 @@
 export const pagesRoutes = {
     homepage: '/',
-    projects: 'projects'
+    projects: 'projects',
+    me: 'me'
 }

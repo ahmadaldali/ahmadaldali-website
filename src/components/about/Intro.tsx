@@ -3,8 +3,7 @@ export default function Intro() {
     <div className="text-center">
       <h1 className="text-4xl font-bold">Ahmad Aldali</h1>
       <p className="text-lg">Software Engineer | Full Stack Developer</p>
-      <p className="mt-2">
-        Email:{" "}
+      <p>
         <a
           href="mailto:ahmadaldali88@gmail.com"
           className="text-teal10 hover:underline"
