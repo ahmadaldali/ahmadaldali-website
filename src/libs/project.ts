@@ -110,7 +110,8 @@ export const projects: TProject[] = [
       "MySQL",
       "AWS Lambda",
       "S3",
-      "Nginx"
+      "Nginx",
+      "Chrome extension"
     ],
     tasks: [
       "Developed a Chrome extension that effectively transcribes and summarizes Google meetings.",

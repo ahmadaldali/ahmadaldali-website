@@ -1,7 +1,7 @@
 "use client";
 
-import { ContactCard } from "@/components/contact/ContactCard";
-import Button from "../ui/Button";
+import Button from "@/components/ui/Button";
+import { Card } from "@/components/ui/Card";
 
 export default function InfoQueryCard({
   isButtonDisabled,
@@ -12,12 +12,12 @@ export default function InfoQueryCard({
 }) {
 
   return (
-    <ContactCard>
+    <Card>
       <div className="flex flex-col sm:gap-1">
         <p>{"select experience, main_skills from users where id=1;"}</p>
       </div>
 
       <Button isDisabled={isButtonDisabled} text="Run query" onClick={onRun} />
-    </ContactCard>
+    </Card>
   );
 }

@@ -1,20 +1,21 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import { ContactCard } from "./ContactCard";
+import { Card } from "./Card";
 
-interface ContactCardProps extends React.HTMLAttributes<HTMLDivElement> {
+interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
+  timeout?: number;
   children: React.ReactNode;
 }
 
-export const ContactCardLoader: React.FC<ContactCardProps> = ({ children }) => {
+export const CardLoader: React.FC<CardProps> = ({ timeout = 2000, children }) => {
   const [loader, setLoader] = useState(true);
 
   setTimeout(() => {
     setLoader(false);
-  }, 2000);
+  }, timeout);
 
   return (
-    <ContactCard>
+    <Card>
       {loader && (
         <div className="flex justify-center items-center w-full h-full">
           <Image
@@ -28,6 +29,6 @@ export const ContactCardLoader: React.FC<ContactCardProps> = ({ children }) => {
       )}
 
       {!loader && children}
-    </ContactCard>
+    </Card>
   );
 };

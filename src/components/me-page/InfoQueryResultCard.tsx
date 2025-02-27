@@ -1,8 +1,8 @@
-import { ContactCardLoader } from "./ContactCardLoader";
+import { CardLoader } from "@/components/ui/CardLoader";
 
 export default function InfoQueryResultCard() {
   return (
-    <ContactCardLoader>
+    <CardLoader>
       <div className="w-full h-full  flex justify-center items-center">
         <table className="w-full">
           <thead className="text-center">
@@ -19,6 +19,6 @@ export default function InfoQueryResultCard() {
           </tbody>
         </table>
       </div>
-    </ContactCardLoader>
+    </CardLoader>
   );
 }

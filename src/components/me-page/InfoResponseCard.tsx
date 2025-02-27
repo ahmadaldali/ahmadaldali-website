@@ -1,8 +1,8 @@
-import { ContactCardLoader } from "./ContactCardLoader";
+import { CardLoader } from "@/components/ui/CardLoader";
 
 export default function InfoResponseCard() {
   return (
-    <ContactCardLoader>
+    <CardLoader>
       <div>
         <p>{"{"}</p>
         <div className="pl-6">
@@ -16,6 +16,6 @@ export default function InfoResponseCard() {
         </div>
         <p>{"}"}</p>
       </div>
-    </ContactCardLoader>
+    </CardLoader>
   );
 }

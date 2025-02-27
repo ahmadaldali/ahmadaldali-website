@@ -1,7 +1,7 @@
 "use client";
 
-import { ContactCard } from "@/components/contact/ContactCard";
 import Button from "@/components/ui/Button";
+import { Card } from "@/components/ui/Card";
 
 export default function InfoRequestCard({
   isButtonDisabled,
@@ -11,7 +11,7 @@ export default function InfoRequestCard({
   onRequest: () => void;
 }) {
   return (
-    <ContactCard>
+    <Card>
       <div className="flex flex-col sm:gap-1">
         <p>{"const myHeaders = new Headers()"}</p>
         <p>{"myHeaders.append('Authorization', 'Bearer ahmadaldali')"}</p>
@@ -24,6 +24,6 @@ export default function InfoRequestCard({
       </div>
 
       <Button text="Run code" onClick={onRequest} isDisabled={isButtonDisabled} />
-    </ContactCard>
+    </Card>
   );
 }
