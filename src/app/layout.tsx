@@ -26,7 +26,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full md:overflow-y-hidden">
-      <head><link rel="icon" href="/favicon.ico" sizes="any" /></head>
+      <head>
+        <link rel="icon" sizes="any" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
+        <link rel="icon" sizes="32x32" href="/favicon.ico" />
+        <link rel="icon" sizes="192x192" href="/favicon.ico"></link>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-white antialiased text-parch16 h-full flex flex-col min-h-screen`}
       >
