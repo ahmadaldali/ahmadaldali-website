@@ -18,7 +18,7 @@ export default function InfoRequestCard({
         <p>{"const requestOptions = {method: 'GET', headers: myHeaders}"}</p>
         <p>
           {
-            "fetch('https://api.ahmadaldali.me/users/1', requestOptions).then((response) => response.text()).then((result) => console.log(result)).catch((error) => console.error(error));"
+            "fetch('https://api.ahmad-aldali.me/users/1', requestOptions).then((response) => response.text()).then((result) => console.log(result)).catch((error) => console.error(error));"
           }
         </p>
       </div>

@@ -6,6 +6,7 @@ import InfoRequestCard from "@/components/me-page/InfoRequestCard";
 import InfoResponseCard from "@/components/me-page/InfoResponseCard";
 import WebsiteCard from "@/components/me-page/WebsiteCard";
 import WebsiteSummaryCard from "@/components/me-page/WebsiteSummaryCard";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function ConactPage() {
@@ -14,26 +15,44 @@ export default function ConactPage() {
   const [isWebsiteSummaryVisible, showSummary] = useState(false);
 
   return (
-    <div className="w-full flex-grow overflow-y-auto p-6 gap-4 flex flex-col">
+    <div className="w-full flex-grow overflow-y-auto p-4 gap-4 flex flex-col">
+      <div className="flex items-center justify-center w-full rounded-3xl">
+        <Image
+          aria-hidden
+          src="/images/contributions-2024.png"
+          alt="contributions 2024"
+          width={600}
+          height={300}
+        />
+      </div>
+
       <div className="grid w-full grid-cols-1 sm:grid-cols-2 justify-between gap-4">
-        <InfoRequestCard isButtonDisabled={isInfoVisible} onRequest={() => sendRequest(true)} />
+        <InfoRequestCard
+          isButtonDisabled={isInfoVisible}
+          onRequest={() => sendRequest(true)}
+        />
         {isInfoVisible && <InfoResponseCard />}
       </div>
 
       {isInfoVisible && (
         <div className="grid w-full grid-cols-1 sm:grid-cols-2 justify-between gap-4">
-          <InfoQueryCard isButtonDisabled={isQueryResultVisible} onRun={() => runQuery(true)} />
+          <InfoQueryCard
+            isButtonDisabled={isQueryResultVisible}
+            onRun={() => runQuery(true)}
+          />
           {isQueryResultVisible && <InfoQueryResultCard />}
         </div>
       )}
 
       {isQueryResultVisible && (
         <div className="grid w-full grid-cols-1 sm:grid-cols-2 justify-between gap-4">
-          <WebsiteCard isButtonDisabled={isWebsiteSummaryVisible} onShow={() => showSummary(true)} />
+          <WebsiteCard
+            isButtonDisabled={isWebsiteSummaryVisible}
+            onShow={() => showSummary(true)}
+          />
           {isWebsiteSummaryVisible && <WebsiteSummaryCard />}
         </div>
       )}
-
     </div>
   );
 }

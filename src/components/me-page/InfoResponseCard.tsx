@@ -12,7 +12,11 @@ export default function InfoResponseCard() {
           <p>{"email: 'ahmadaldali88@gmail.com',"}</p>
           <p>{"phone: '+40747428289',"}</p>
           <p>{"birthday: '1995-09-26',"}</p>
-          <p>{"location: 'Romanica, Cluj-Napoca'"}</p>
+          <p>{"location: 'Romania, Cluj-Napoca',"}</p>
+          <p>{"github: ["}</p>
+          <p className="pl-4 underline text-blue-600"><a target="_blank" href={"https://github.com/ahmadaldali"}>https://github.com/ahmadaldali,</a></p>
+          <p className="pl-4 underline text-blue-600"><a target="_blank" href={"https://github.com/aal181223"}>https://github.com/aal181223</a></p>
+          <p>{"],"}</p>
         </div>
         <p>{"}"}</p>
       </div>
