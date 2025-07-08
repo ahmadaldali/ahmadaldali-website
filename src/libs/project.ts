@@ -2,23 +2,32 @@ import { TProject } from "@/types";
 
 export const projects: TProject[] = [
   {
+    id: "ah-li-sprintly",
+    title: "Ah-li-sprintly",
+    description:
+      "An AI-powered assistant designed to supercharge software teams. A Django-based project designed to assist with sprint planning and intelligent issue assignment.",
+    technologies: ["Python", "Django", "REST Apis", "OpenAI", "Jira"],
+    tasks: [],
+  },
+  {
     id: "ahmadaldali",
     title: "Ahmad Aldali",
-    description:
-      "My Personal website.",
+    description: "My Personal website.",
     picture: "/images/projects/ahmad.jpeg",
-    technologies: [
-      "Typescript",
-      "NextJS",
-      "HTML",
-      "CSS",
-      "Tailwind CSS",
-    ],
+    technologies: ["Typescript", "NextJS", "HTML", "CSS", "Tailwind CSS"],
     tasks: [
       "Developing my personal website to showcase my knowledge in NextJS.",
     ],
     link: "/",
     isStar: true,
+  },
+  {
+    id: "ah-li-screeny",
+    title: "Ah-li-screeny",
+    description:
+      "A lightweight Chrome extension that lets you record your screen easily — no paid tools, no account creation, just install and start recording!",
+    technologies: ["JavaScript", "HTML", "CSS"],
+    tasks: [],
   },
   {
     id: "yoboo",
@@ -41,6 +50,7 @@ export const projects: TProject[] = [
       "Storybook",
       "Storyblok",
       "Auth0",
+      "Playwright"
     ],
     tasks: [
       "Successfully replaced the team leader role in the FE side, ensuring project stability and zero downtime during the transition.",
@@ -56,11 +66,7 @@ export const projects: TProject[] = [
     description:
       "With Eleni, you'll have real-time visibility to your cash flow, accurate forecasting, and valuable insights to make informed financial decisions.",
     picture: "/images/projects/eleni.png",
-    technologies: [
-      "Python",
-      "Django",
-      "MySQL",
-    ],
+    technologies: ["Python", "Django", "MySQL", "REST Apis"],
     tasks: [
       "Developing and maintaining the backend logic and data models of a web application that helps users to have a look at their business financial position, cash flow, and forecasting.",
       "Writing clean, reusable, and testable code, and following the best practices and standards of web development.",
@@ -98,12 +104,13 @@ export const projects: TProject[] = [
   {
     id: "summet",
     title: "SummetPro",
-    description: "Sumeet summarizes all your Google meetings, saving you tons of time spent on note-taking and long follow-up emails.",
+    description:
+      "Sumeet summarizes all your Google meetings, saving you tons of time spent on note-taking and long follow-up emails.",
     picture: "/images/projects/sumeet.png",
     technologies: [
       "PHP",
       "Javascript",
-      "React",
+      "REST Apis",
       "Bootstrap",
       "HTML",
       "CSS",
@@ -111,7 +118,7 @@ export const projects: TProject[] = [
       "AWS Lambda",
       "S3",
       "Nginx",
-      "Chrome extension"
+      "Chrome extension",
     ],
     tasks: [
       "Developed a Chrome extension that effectively transcribes and summarizes Google meetings.",
@@ -123,13 +130,15 @@ export const projects: TProject[] = [
   {
     id: "qms",
     title: "ZEOUR QMS",
-    description: "Queue Management System to improve operational efficiency, enhances customer satisfaction, and boosts revenue by reducing wait times and organizing customer flow.",
+    description:
+      "Queue Management System to improve operational efficiency, enhances customer satisfaction, and boosts revenue by reducing wait times and organizing customer flow.",
     picture: "/images/projects/qms.png",
     technologies: [
       "PHP",
       "Laravel",
       "Javascript",
       "VueJS",
+      "REST Apis",
       "Bootstrap",
       "HTML",
       "CSS",
@@ -140,14 +149,15 @@ export const projects: TProject[] = [
       "jQuery",
       "C#",
       "Redis",
-      "Pusher"
+      "Pusher",
     ],
     tasks: [
+      "Designed and developed a robust licensing system that generates a one-time use license to activate the system.",
       "Developed a full System (Queue Management System) from scratch to end according to SDLC.",
       "Developed multiple applications within QMS, for employees, customers, managers, and admins as microservices with flexibility for standalone or centralized operation, enhancing system adaptability.",
       "Innovated the first Telegram bot for the Queue Management System, enabling ticketing and appointment bookings through a popular messaging platform.",
       "Integrated the system with an SDK keypad device, a Digital Signage System, and a Feedback System for enhanced functionality.",
-      "Attracted over 25 clients in the first year of operation, establishing a strong market presence."
+      "Attracted over 25 clients in the first year of operation, establishing a strong market presence.",
     ],
     link: "https://www.zeour.co.uk/queue-management-system",
     isStar: true,
@@ -155,7 +165,8 @@ export const projects: TProject[] = [
   {
     id: "diamond",
     title: "Diamond Lion",
-    description: "The Diamond Lion Mobile App allows customers and agents to purchase different telecom, gaming, and internet cards within a click. It was also provided by an admin panel to control Cards and Employees with instant reports.",
+    description:
+      "The Diamond Lion Mobile App allows customers and agents to purchase different telecom, gaming, and internet cards within a click. It was also provided by an admin panel to control Cards and Employees with instant reports.",
     technologies: [
       "Flutter",
       "Laravel",
@@ -167,69 +178,49 @@ export const projects: TProject[] = [
       "jQuery",
       "PHP",
       "Javascript",
-      "Dart"
+      "Dart",
     ],
     tasks: [],
   },
   {
     id: "blue-arrow-erp",
     title: "Blue Arrow ERP",
-    description: "A small ERP system for Blue Arrow Company (Real Estate Company in Erbil) that contains multiple sections such as Hr, CRM, Campaigns, etc ...",
-    technologies: [
-      "Laravel",
-      "PHP",
-      "Javascript",
-      "HTML",
-      "CSS",
-      "MYSQL"
-    ],
+    description:
+      "A small ERP system for Blue Arrow Company (Real Estate Company in Erbil) that contains multiple sections such as Hr, CRM, Campaigns, etc ...",
+    technologies: ["Laravel", "PHP", "Javascript", "HTML", "CSS", "MYSQL"],
     tasks: [],
   },
   {
     id: "covid-app",
     title: "Covid19 statistics",
-    description: "An android app using flutter for tracking the covid19 statistics. It shows the number of cases, deaths, and recovered people in the world and in each country.",
-    technologies: [
-      "Flutter",
-      "Dart",
-      "REST Apis",
-    ],
+    description:
+      "An android app using flutter for tracking the covid19 statistics. It shows the number of cases, deaths, and recovered people in the world and in each country.",
+    technologies: ["Flutter", "Dart", "REST Apis"],
     tasks: [],
   },
   {
     id: "who-will-win-million",
     title: "Who will win the million",
-    description: "An android app using flutter for fun and entertainment. It is a quiz game. Users will get some questions and they should answer the correct one to win the game.",
-    technologies: [
-      "Flutter",
-      "Dart",
-      "Sqlite",
-    ],
+    description:
+      "An android app using flutter for fun and entertainment. It is a quiz game. Users will get some questions and they should answer the correct one to win the game.",
+    technologies: ["Flutter", "Dart", "Sqlite"],
     tasks: [],
   },
   {
     id: "translation-app",
     title: "Automatic Translation",
-    description: "An android app for translation that takes a picture and extracts text from the image with OCR technology. LSTM neural network does the translation and then puts them back into the image.",
-    technologies: [
-      "Python",
-      "Jave",
-      "LSTM",
-      "OCR",
-      "Neural networks",
-    ],
+    description:
+      "An android app for translation that takes a picture and extracts text from the image with OCR technology. LSTM neural network does the translation and then puts them back into the image.",
+    technologies: ["Python", "Jave", "LSTM", "OCR", "Neural networks"],
     tasks: [],
   },
   {
     id: "ethan-game",
     title: "Ethan Escape Game",
-    description: "Midterm Project (3D Game). It is a game for entertainment and fun. It consists of 4 levels. The player should pass every level and reach the final level. to win the game.",
-    technologies: [
-      "C#",
-      "Unity",
-      "Blender",
-    ],
+    description:
+      "Midterm Project (3D Game). It is a game for entertainment and fun. It consists of 4 levels. The player should pass every level and reach the final level. to win the game.",
+    technologies: ["C#", "Unity", "Blender"],
     tasks: [],
-    link: "https://drive.google.com/file/d/1KO3782FbRK-qQr4subxgcJeJ9hVFcpeA/view?usp=drive_link"
+    link: "https://drive.google.com/file/d/1KO3782FbRK-qQr4subxgcJeJ9hVFcpeA/view?usp=drive_link",
   },
 ];
