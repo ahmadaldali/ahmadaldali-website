@@ -13,7 +13,7 @@ export default function InfoQueryResultCard() {
           </thead>
           <tbody className="text-center">
             <tr>
-              <td>+4 years</td>
+              <td>+5 years</td>
               <td>Laravel, Javascript, Svelte, VueJs, REST Apis</td>
             </tr>
           </tbody>

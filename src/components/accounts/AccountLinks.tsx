@@ -48,6 +48,21 @@ export default function AccountLinks() {
         />
         Hackerearth
       </a>
+      <a
+        className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+        href="https://leetcode.com/u/ahmadaldali/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          aria-hidden
+          src="/svg/leetcode.svg"
+          alt="leetcode icon"
+          width={16}
+          height={16}
+        />
+        LeetCode
+      </a>
     </section>
   );
 }
