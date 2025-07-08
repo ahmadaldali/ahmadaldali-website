@@ -10,7 +10,7 @@ export default function Header() {
             <HeaderButton buttonText="Home" buttonLink="/" />
             <HeaderButton buttonText="Projects" buttonLink={pagesRoutes.projects} />
             <HeaderButton buttonText="Me" buttonLink={pagesRoutes.me} />
-            <HeaderButton buttonText="CV" buttonLink="/CV.pdf" target="_blank" />
+            <HeaderButton buttonText="CV" buttonLink="/Ahmad Aldali - CV.pdf" target="_blank" />
           </div>
         </nav>
       </div>
