@@ -17,13 +17,21 @@ export default function ConactPage() {
   return (
     <div className="w-full flex-grow overflow-y-auto p-4 gap-4 flex flex-col">
       <div className="flex items-center justify-center w-full rounded-3xl">
-        <Image
-          aria-hidden
-          src="/images/contributions-2024.png"
-          alt="contributions 2024"
-          width={600}
-          height={300}
-        />
+        <a
+          href="https://github.com/aal181223"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="overflow-hidden border"
+          aria-label="View GitHub Profile"
+        >
+          <Image
+            aria-hidden
+            src="/images/contributions-2024.png"
+            alt="contributions 2024"
+            width={600}
+            height={300}
+          />
+        </a>
       </div>
 
       <div className="grid w-full grid-cols-1 sm:grid-cols-2 justify-between gap-4">
